@@ -32,7 +32,7 @@ class Contact extends React.Component {
     }).then((response)=>{
       if (response.data.status === 'success') {
         console.log(response.data)
-        alert("Message Sent."); 
+        alert("Message envoyé."); 
         this.resetForm()
       }else if(response.data.status === 'fail'){
         alert("Message failed to send.")
