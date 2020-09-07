@@ -2,7 +2,6 @@ const nodemailer = require('nodemailer');
 const router = require("express").Router();
 require('dotenv').config()
 
-router.route("/")
 
 const bunyan = require('bunyan');
 let logger = bunyan.createLogger({
@@ -36,11 +35,12 @@ transporter.verify((error, success) => {
 });
 
 
-router.post('/send', (req, res) => {
+router.post('/send', (req, res, next) => {
     const name = req.body.name
     const email = req.body.email
     const subject = req.body.subject
     const message = req.body.message
+
 
     const mail = {
         from: `Porfolio visitor: ${name} <${email}>`,
@@ -49,17 +49,17 @@ router.post('/send', (req, res) => {
         text: message
     }
 
-    console.log(mail)
-
     transporter.sendMail(mail, (err, data) => {
         if (err) {
             res.json({
                 status: 'fail'
             })
+            console.log("fail")
         } else {
             res.json({
                 status: 'success'
             })
+            console.log("sucess")
         }
     })
 })

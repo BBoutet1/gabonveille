@@ -27,7 +27,7 @@ class Contact extends React.Component {
         console.log(this.state)
     axios({
       method: "POST", 
-      url:"/send", 
+      url:"/api/send", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {
