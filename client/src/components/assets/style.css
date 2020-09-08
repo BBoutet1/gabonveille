@@ -3,3 +3,43 @@
        padding: 0px;
        box-sizing: border-box;
    }
+   /* main navigationbar */
+   
+   nav {
+       display: flex;
+       height: fit-content;
+   }
+   /* nav-link wrapper */
+   
+   .navbar {
+       width: fit-content;
+       margin: auto;
+   }
+   /* Navbar logo image */
+   
+   .logo {
+       width: 150px;
+       height: auto;
+       margin: 8px;
+   }
+   
+   .adsPanel {
+       width: auto;
+       height: 120px;
+       margin: auto;
+   }
+   
+   .header {
+       background-color: white;
+       max-height: 150px;
+   }
+   
+   #nav-right {
+       width: 200px!important;
+   }
+   
+   #nav-right a {
+       color: black;
+       height: 30px;
+       padding: 5px;
+   }
