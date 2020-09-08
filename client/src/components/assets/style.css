@@ -29,17 +29,32 @@
        margin: auto;
    }
    
-   .header {
+   .header,
+   #nav-right {
        background-color: white;
-       max-height: 150px;
+       height: 150px;
    }
    
-   #nav-right {
-       width: 200px!important;
+   #nav-right,
+   #nav-right>li {
+       width: 130px!important;
+   }
+   
+   #nav-right>li {
+       height: 33%;
+       margin: 0px;
+       line-height: 100%;
    }
    
    #nav-right a {
        color: black;
-       height: 30px;
        padding: 5px;
+       height: 100%;
+       line-height: 40px;
+       width: fit-content;
+       margin: auto;
+   }
+   
+   textarea {
+       min-height: 200px;
    }

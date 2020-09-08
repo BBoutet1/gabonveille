@@ -43,8 +43,8 @@ router.post('/send', (req, res, next) => {
 
 
     const mail = {
-        from: `Porfolio visitor: ${name} <${email}>`,
-        to: 'boutetlb@gmail.com', // Email address that you want to receive messages on
+        from: `Visiteur gabonveille ${name} <${email}>`,
+        to: 'boutetlb@gmail.com, boor01@yahoo.fr', // Email address that you want to receive messages on
         subject: subject,
         text: message
     }

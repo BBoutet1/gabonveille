@@ -12,7 +12,7 @@ function Header(){
         <img className="adsPanel" src={AdsPanel} alt="ads panel"></img>
           <div className="nav-wrapper">
             <ul id="nav-right" className="right">
-              <li><a href="sass.html">Accueil</a></li>
+              <li><a className="gh-btn"href="sass.html">Accueil</a></li>
               <li><a href="nous">Nous connaitre</a></li>
               <li><a href="contact">Nous contacter</a></li>
             </ul>
