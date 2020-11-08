@@ -3,36 +3,64 @@
        padding: 0px;
        box-sizing: border-box;
    }
-   /* main navigationbar */
+   /* main nabar */
    
-   nav {
+   header {
        display: flex;
        height: fit-content;
+       height: calc(5.5vw + 64px);
+       background-color: white;
    }
-   /* nav-link wrapper */
+   /* Nav */
    
-   .navbar {
-       width: fit-content;
-       margin: auto;
+   nav {
+       height: calc(3vw + 31px);
+   }
+   /* Nav wrapper */
+   
+   .nav-wrapper {
+       margin: 0 calc(4vw - 5px) 0 calc(4vw - 5px);
+       height: 100%;
+   }
+   /* Nav ul */
+   
+   ul {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       height: 100%;
+   }
+   
+   li {
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   nav ul a {
+       padding: 0 8px;
+       height: fit-content;
+       line-height: 100%;
    }
    /* Navbar logo image */
    
    .logo {
-       width: 150px;
-       height: auto;
-       margin: 8px;
+       width: auto;
+       height: 70%;
+       margin: auto;
+       margin-left: calc(4vw - 5px);
    }
    
-   .adsPanel {
+   .publicite {
        width: auto;
-       height: 120px;
+       height: 80%;
        margin: auto;
    }
    
-   .header,
    #nav-right {
-       background-color: white;
-       height: 150px;
+       margin: auto;
+       margin-right: calc(4vw - 5px);
    }
    
    #nav-right,

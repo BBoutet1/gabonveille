@@ -4,7 +4,7 @@ import Home from "../pages/Home/Home";
 import Contact from "../pages/Contact/Contact";
 import "./assets/style.css"
 
-class PortfolioContainer extends Component {
+class PageContainer extends Component {
     state = {
         currentPage: "Home",
         backgroundClass: "HomeBackground"
@@ -28,28 +28,25 @@ class PortfolioContainer extends Component {
         }
     };
 
-
-
     renderPage = () => {
         if (this.state.currentPage === "Home") {
-            return <Home / > ;
+            return <Home/> ;
         } else if (this.state.currentPage === "Contact") {
-            return <Contact / > ;
+            return <Contact/> ;
         }
     };
 
-
-
     render() {
-        return ( <
-            div className = { "wrapper " + this.state.backgroundClass } >
-            <
-            NavTabs currentPage = { this.state.currentPage }
-            handlePageChange = { this.handlePageChange }
-            /> {this.renderPage()} < /
-            div >
+        return (
+            <div className = { "wrapper " + this.state.backgroundClass } >
+                <NavTabs
+                    currentPage={this.state.currentPage}
+                    handlePageChange = { this.handlePageChange }
+                />
+                    {this.renderPage()} 
+            </div >
         );
     }
 }
 
-export default PortfolioContainer;
+export default PageContainer;

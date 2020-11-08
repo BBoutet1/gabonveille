@@ -10,7 +10,6 @@ function App() {
   
   return (
     <Router>
-          <div>
         <Header/>
         <Nav/>
         <Switch>
@@ -21,7 +20,6 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
