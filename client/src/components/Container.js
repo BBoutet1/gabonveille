@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavTabs from "./NavTabs";
+import Sidebar from "./Sidebar"
 import Home from "../pages/Home/Home";
 import Contact from "../pages/Contact/Contact";
 import "./assets/style.css"
@@ -38,7 +39,8 @@ class PageContainer extends Component {
 
     render() {
         return (
-            <div className = { "wrapper " + this.state.backgroundClass } >
+            <div className={"wrapper " + this.state.backgroundClass} >
+                <Sidebar/>
                 <NavTabs
                     currentPage={this.state.currentPage}
                     handlePageChange = { this.handlePageChange }

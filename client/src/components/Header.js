@@ -11,12 +11,11 @@ function Header(){
         <img className="logo" src={Logo} alt="logo"></img>
         <img className="publicite" src={Publicite} alt="ads panel"></img>
             <ul id="nav-right">
-              <li><a className="gh-btn" href="sass.html">Accueil</a></li>
+              <li><a href="accueil">Accueil</a></li>
               <li><a href="nous">Nous connaitre</a></li>
               <li><a href="contact">Nous contacter</a></li>
             </ul>
         </header>
-        
     )
 }
 
