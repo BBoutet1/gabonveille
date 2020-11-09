@@ -49,9 +49,6 @@ import BurgerMenu from "./Sidebar";
       >
         <Link
           to={item.path}
-          activeStyle={{
-            color: "#FFFFFF",  
-          }}
         >
           {item.title}
         </Link>
