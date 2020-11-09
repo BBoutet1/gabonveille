@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SearchBox from "./SearchBox"
 import BurgerMenu from "./Sidebar";
+
 
  const listLinks = [
     {
@@ -62,9 +64,10 @@ function NavTabs(props) {
     <div>
       <nav className="navbar">
           <ul id="nav-mobile">
-          {renderList()}
+              {renderList()}
+               <SearchBox/>
           </ul>
-    </nav>
+      </nav>
       <div className="sidebar">
           <BurgerMenu>
               {renderList()}
