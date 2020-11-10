@@ -9,10 +9,7 @@ class Contact extends React.Component {
     subject:'',
   	message: ''
 	}
-  
-    
- 
-  
+   
   handleChange = event => {
     event.preventDefault()
     let value = event.target.value;

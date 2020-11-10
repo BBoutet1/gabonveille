@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SearchBox from "./SearchBox"
-import BurgerMenu from "./Sidebar";
+import BurgerMenu from "../BurgerMenu";
 
 
  const listLinks = [

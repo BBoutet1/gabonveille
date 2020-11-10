@@ -4,7 +4,7 @@ function SearchBox(){
 
     return (
     <div className="search-form">
-          <div className="search-icon"><i class="material-icons prefix">search</i></div>
+          <div className="search-icon"><i className="material-icons prefix">search</i></div>
           <input type="text" id="search-input" placeholder="Rechercher"></input>
     </div>
     )
