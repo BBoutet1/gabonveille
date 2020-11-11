@@ -22,6 +22,9 @@ function App() {
         </Route>
         <Route exact path={["/nous-connaitre"]}>
             <Nous/>
+        </Route>
+        <Route exact path={["/*"]}>
+            <Home/>
           </Route>
         </Switch>
     </Router>

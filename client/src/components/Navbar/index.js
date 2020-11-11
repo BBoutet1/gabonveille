@@ -2,50 +2,49 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SearchBox from "./SearchBox"
 import BurgerMenu from "../BurgerMenu";
+import "./style.css"
 
 
  const listLinks = [
     {
-      key: "société",
       path: "/société/",
-      title: "Société",
+      title: "société",
     },
     {
-      key: "culture",
       path: "/culture/",
-      title: "Culture",
+      title: "culture",
+    },
+     {
+      path: "/sport/",
+      title: "sport",
     },
     {
-      key: "politique",
       path: "/politique/",
-      title: "Politique",
+      title: "politique",
     },
     {
-      key: "Economie",
       path: "/économie/",
-      title: "Economie",
+      title: "économie",
     },
     {
-      key: "entreprenariat",
       path: "/entreprenariat/",
-      title: "Entreprenariat",
+      title: "entreprenariat",
    },
     {
-      key: "afrique",
-      path: "/afrique/",
+
+      path: "/afrique-et-diaspora/",
       title: "Afrique et diaspora",
     }
     ,
     {
-      key: "etranger",
       path: "/étranger/",
-      title: "Etranger",
+      title: "étranger",
    }
   ]
  const renderList = () => {
     return listLinks.map(item => (
       <li
-        key={item.key}
+        key={item.title}
       >
         <Link
           to={item.path}
@@ -61,8 +60,19 @@ function NavTabs(props) {
     <div>
       <nav className="navbar">
           <ul id="nav-mobile">
-              {renderList()}
-               <SearchBox/>
+          {renderList()}
+              <SearchBox />
+              <ul  id="subnav">
+                  <li>
+                    <a href="accueil" className="material-icons prefix">home</a>
+                  </li>
+                  <li>
+                    <a href="nous-connaitre" className="material-icons prefix">info</a>
+                  </li>
+                  <li>
+                    <a href="contact" className="material-icons prefix">mail</a>
+                  </li>
+              </ul>
           </ul>
       </nav>
       <div className="sidebar">

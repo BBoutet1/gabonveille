@@ -1,0 +1,71 @@
+/* Header above the Navbar */
+
+header {
+    display: flex;
+    height: fit-content;
+    height: calc(5.5vw + 34px);
+    min-height: 90px;
+    background-color: white;
+}
+
+
+/* Logo image inside Header */
+
+.logo {
+    width: auto;
+    height: 70%;
+    margin: auto;
+    margin-left: calc(4vw - 5px);
+}
+
+
+/* Advertisement  container */
+
+.publicite {
+    width: auto;
+    height: 80%;
+    margin: auto;
+}
+
+
+/*  Right menu inside the Header */
+
+#nav-right {
+    margin: auto;
+    margin-right: 0px;
+    color: #FFFFFF;
+}
+
+#nav-right,
+#nav-right>li {
+    width: 130px!important;
+}
+
+#nav-right li {
+    height: 33%;
+    margin: 1px;
+    background: #333;
+}
+
+#nav-right a {
+    padding: 3px;
+    height: 100%;
+    width: fit-content;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .publicite {
+        margin: auto;
+        margin-right: calc(4vw - 5px);
+    }
+    .logo {
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #nav-right {
+        display: none;
+    }
+}

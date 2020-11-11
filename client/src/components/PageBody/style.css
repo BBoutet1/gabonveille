@@ -1,0 +1,63 @@
+ .page-body {
+     width: 100%;
+     min-height: 80vh;
+     display: inline-flex;
+ }
+ /* Pages body: main content */
+ 
+ .big-headline {
+     width: 60%;
+     max-width: 500px;
+     height: 100%;
+ }
+ /* Pages body: right panel for last reports lists and 
+           left panel for advertisement*/
+ 
+ .reports-list,
+ .advertising {
+     width: 20%;
+     min-height: 80vh;
+ }
+ 
+ .big-title {
+     margin: 10px 0;
+     padding: 0;
+     width: 100%;
+     font-size: 28px;
+     font-weight: 800;
+     line-height: 1.2;
+     text-align: justify;
+ }
+ 
+ .big-image {
+     width: 100%;
+     margin: 10px auto;
+     display: block;
+ }
+ 
+ .big-summary {
+     text-align: justify;
+     display: block;
+ }
+ /* Responsive design */
+ 
+ @media screen and (max-width: 920px) and (min-width: 768px) {
+     #nav-mobile a {
+         font-size: 12px;
+     }
+     nav ul {
+         margin: 0 10px;
+     }
+ }
+ 
+ @media screen and (max-width: 768px) {
+     .big-title {
+         font-size: 20px;
+     }
+ }
+ 
+ @media screen and (max-width: 540px) {
+     .bigTitle {
+         font-size: 16px;
+     }
+ }
