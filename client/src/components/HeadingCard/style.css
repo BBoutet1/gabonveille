@@ -1,0 +1,21 @@
+.card-container {
+    border-top: 2px solid #d5d8dc;
+    margin-bottom: 10px;
+    width: 30%;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 0;
+    height: fit-content;
+}
+
+.small-title,
+.small-image {
+    padding-top: 5px;
+    width: 100%;
+    display: block;
+}
+
+.small-image {
+    width: 100%;
+    padding-top: 5px;
+}

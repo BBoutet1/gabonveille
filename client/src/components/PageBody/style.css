@@ -1,22 +1,49 @@
  .page-body {
-     width: 100%;
-     min-height: 80vh;
-     display: inline-flex;
+     width: fit-content;
+     min-height: 100mv;
+     padding-left: 30px;
+     max-width: 100vw;
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ .headline-and-ads {
+     width: calc(55vw - 30px);
+     display: flex;
  }
  /* Pages body: main content */
  
  .big-headline {
-     width: 60%;
+     width: 70%;
      max-width: 500px;
-     height: 100%;
+     border-top: 3px solid #d5d8dc;
+     margin: 20px;
  }
  /* Pages body: right panel for last reports lists and 
            left panel for advertisement*/
  
- .reports-list,
+ .small-headings {
+     width: 35vw;
+     max-width: 450px;
+     display: flex;
+     flex-wrap: wrap;
+     max-height: 75vw;
+ }
+ 
+ .small-headings-right,
  .advertising {
-     width: 20%;
-     min-height: 80vh;
+     margin: 10px;
+     margin-top: 20px;
+ }
+ 
+ .advertising {
+     width: 30%;
+     margin: 10px;
+     margin-top: 20px;
+ }
+ 
+ .headings-bottom {
+     display: none;
  }
  
  .big-title {
@@ -41,7 +68,21 @@
  }
  /* Responsive design */
  
- @media screen and (max-width: 920px) and (min-width: 768px) {
+ @media screen and (max-width: 1040px) {
+     .heading-left {
+         display: none;
+     }
+     .headings-bottom {
+         display: flex;
+         width: 100%;
+     }
+     .headline-and-ads {
+         width: calc(100vw - 30px);
+         display: flex;
+     }
+ }
+ 
+ @media screen and (max-width: 920px) {
      #nav-mobile a {
          font-size: 12px;
      }
@@ -57,7 +98,7 @@
  }
  
  @media screen and (max-width: 540px) {
-     .bigTitle {
+     .big-title {
          font-size: 16px;
      }
  }

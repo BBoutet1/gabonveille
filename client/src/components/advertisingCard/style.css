@@ -1,0 +1,22 @@
+.ads-container {
+    border-top: 2px solid #d5d8dc;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    height: fit-content;
+}
+
+.ad-title,
+.ad-image {
+    padding-top: 5px;
+    width: 100%;
+    display: block;
+    margin: 0 5px;
+}
+
+.small-image {
+    width: 100%;
+    padding-top: 5px;
+}

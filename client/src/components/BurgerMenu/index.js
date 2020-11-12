@@ -8,11 +8,11 @@ import "../Navbar/style.css"
 export default function BurgerMenu(props) {
     var styles = {
         bmBurgerButton: {
-            position: 'fixed',
+            position: 'relative',
             width: 'calc(0.8vw + 23px)',
             height: 'calc(0.8vw + 18px)',
             left: 'calc(4vw - 5px)',
-            top: '96px'
+            top: '-28px'
         },
         bmBurgerBars: {
             background: '#373a47'

@@ -1,11 +1,32 @@
 import React from "react";
+import HeadingCard from "../HeadingCard";
+import AdvertisingCard from "../advertisingCard"
 import "./style.css"
+import headingsArray from "../../utils/lastReporst"
+import ads from "../../utils/advertising"
+
+ const smallHeadings = headingsArray.map(heading => {
+   return <HeadingCard
+     key = {heading.title}
+     title={heading.title}
+     image={heading.image}
+   /> 
+ });
+        
+const advertisings = ads.map(element => {
+   return <AdvertisingCard
+     image={element.image}
+   />  
+        });
+
+ console.log(smallHeadings)
 export default function ReportCard(){
   return (
     <div className="page-body">
-        <aside className="reports-list">
-    
-        </aside>
+        <aside className="small-headings heading-left">
+              {smallHeadings}
+      </aside>
+      <div className="headline-and-ads"> 
           <main className="big-headline">
               <h3 className="big-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
               <div> 
@@ -16,7 +37,12 @@ export default function ReportCard(){
                 </div>
         </main>
         <aside className="advertising">
-
+            {advertisings}
+      </aside>
+     
+      </div>
+ <aside className="small-headings headings-bottom">
+              {smallHeadings}
         </aside>
     </div>
   );
