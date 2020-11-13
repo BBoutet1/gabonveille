@@ -23,10 +23,13 @@ const advertisings = ads.map(element => {
 export default function ReportCard(){
   return (
     <div className="page-body">
-        <aside className="small-headings heading-left">
+        <aside className="small-headings-container heading-left">
               {smallHeadings}
       </aside>
-      <div className="headline-and-ads"> 
+      <div className="headline-and-ads">
+         <aside className="advertising advertising-top">
+            {advertisings}
+        </aside>
           <main className="big-headline">
               <h3 className="big-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
               <div> 
@@ -36,12 +39,12 @@ export default function ReportCard(){
                 <p className="big-summary">Velit dignissim sodales ut eu sem. A arcu cursus vitae congue. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Amet consectetur adipiscing elit ut aliquam purus sit amet. Augue lacus viverra vitae congue. </p>
                 </div>
         </main>
-        <aside className="advertising">
+        <aside className="advertising advertising-right">
             {advertisings}
       </aside>
      
       </div>
- <aside className="small-headings headings-bottom">
+ <aside className="small-headings-container headings-bottom">
               {smallHeadings}
         </aside>
     </div>

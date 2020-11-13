@@ -1,34 +1,32 @@
  .page-body {
-     width: fit-content;
-     min-height: 100mv;
-     padding-left: 30px;
-     max-width: 100vw;
+     width: 90vw;
+     margin: 0 auto;
      display: flex;
      flex-wrap: wrap;
  }
  
  .headline-and-ads {
-     width: calc(55vw - 30px);
+     width: 65%;
      display: flex;
- }
- /* Pages body: main content */
- 
- .big-headline {
-     width: 70%;
-     max-width: 500px;
-     border-top: 3px solid #d5d8dc;
-     margin: 20px;
+     float: right;
  }
  /* Pages body: right panel for last reports lists and 
            left panel for advertisement*/
  
- .small-headings {
-     width: 35vw;
-     max-width: 450px;
+ .small-headings-container {
+     width: 35%;
      display: flex;
      flex-wrap: wrap;
-     max-height: 75vw;
      margin-top: 20px;
+ }
+ /* Pages body: main content */
+ 
+ .big-headline {
+     width: 65%;
+     max-width: 700px;
+     border-top: 3px solid #d5d8dc;
+     margin: 20px;
+     float: left;
  }
  
  .small-headings-right,
@@ -38,9 +36,13 @@
  }
  
  .advertising {
-     width: 30%;
+     width: 35%;
      margin: 10px;
      margin-top: 20px;
+ }
+ 
+ .advertising-top {
+     display: none;
  }
  
  .headings-bottom {
@@ -78,8 +80,18 @@
          width: 100%;
      }
      .headline-and-ads {
-         width: calc(100vw - 30px);
+         width: 100%;
          display: flex;
+     }
+     .advertising,
+     .big-headline {
+         width: 50%;
+     }
+     .advertising {
+         display: flex;
+     }
+     .advertising-top {
+         display: none;
      }
  }
  
@@ -90,16 +102,49 @@
      nav ul {
          margin: 0 10px;
      }
+     .big-title {
+         font-size: 22px;
+     }
+     .advertising-top {
+         display: none;
+     }
  }
  
  @media screen and (max-width: 768px) {
      .big-title {
-         font-size: 20px;
+         font-size: 18px;
+     }
+     .big-headline {
+         width: 70%;
+         margin: 10px;
+     }
+     .advertising {
+         width: 30%;
+         display: block;
+     }
+     .advertising-top {
+         display: none;
      }
  }
  
  @media screen and (max-width: 540px) {
+     .headline-and-ads {
+         width: calc(100% - 10px);
+         display: block;
+     }
      .big-title {
          font-size: 16px;
+     }
+     .advertising-right {
+         display: none;
+     }
+     .advertising-top {
+         width: 100%;
+         display: flex;
+         margin: 0px;
+     }
+     .big-headline {
+         width: 100%;
+         margin: 10px;
      }
  }
