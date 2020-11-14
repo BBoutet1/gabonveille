@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css"
 export default function HeadingCard(props) {
-  console.log(props.image)
   return (
           <div className="ads-container">
           <div className="ad-title">{props.title}</div>

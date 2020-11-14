@@ -5,14 +5,12 @@ import "./components/assets/style.css";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Nous from "./pages/Nous"
-import Nav from "./components/Navbar";
-import Header from "./components/Header";
+import PagesHader from "./pages/PagesHeader"
 
 function App() {
   return (
     <Router>
-        <Header/>
-        <Nav/>
+        <PagesHader/>
         <Switch>
           <Route exact path={["/"]}>
             <Home/>

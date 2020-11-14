@@ -23,7 +23,7 @@ const advertisings = ads.map(element => {
 export default function ReportCard(){
   return (
     <div className="page-body">
-        <aside className="small-headings-container heading-left">
+        <aside className="small-headings-container headings-left">
               {smallHeadings}
       </aside>
       <div className="headline-and-ads">
