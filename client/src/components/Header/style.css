@@ -13,7 +13,7 @@ header {
 
 .logo {
     width: auto;
-    height: 70%;
+    height: calc(4vw + 46px);
     margin: auto;
     margin-left: calc(4vw - 5px);
 }
@@ -58,10 +58,11 @@ header {
     .publicite {
         margin: auto;
         margin-right: calc(4vw - 5px);
+        height: 70%;
     }
-    .logo {
-        height: 60%;
-    }
+    /* .logo {
+        height: 65%;
+    } */
 }
 
 @media screen and (max-width: 540px) {

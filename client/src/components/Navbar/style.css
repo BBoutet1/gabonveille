@@ -113,12 +113,13 @@ nav ul a {
     }
     #subnav li {
         height: 100%;
-        margin-right: 1px;
+        margin-left: 1px;
         background: #333;
         border-radius: 3px;
+        width: 30px;
     }
-    a .material-icons {
-        font-size: 18px;
+    a.material-icons {
+        font-size: 18px!important;
     }
     nav ul {
         margin-right: 0;
