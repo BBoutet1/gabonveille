@@ -1,21 +1,24 @@
-            .ads-container {
-                border-top: 2px solid #d5d8dc;
-                margin-bottom: 10px;
-                width: 100%;
-                font-size: 14px;
-                font-weight: bold;
-                margin: 0 5px 20px;
-                height: fit-content;
-            }
-            
-            .ad-title,
-            .ad-image {
-                padding-top: 5px;
-                width: 100%;
-                display: block;
-            }
-            
-            .small-image {
-                width: 100%;
-                padding-top: 5px;
-            }
+                .ads-container {
+                    border-top: 2px solid #d5d8dc;
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin: 0 5px 20px;
+                    height: fit-content;
+                    display: flex;
+                }
+                
+                .ad-image {
+                    padding-top: 5px;
+                    width: 100%;
+                    display: block;
+                    margin: auto;
+                }
+                
+                @media screen and (max-width: 540px) {
+                    .ads-container {
+                        margin: 0px;
+                        margin-top: 10px;
+                        width: 99%;
+                    }
+                }

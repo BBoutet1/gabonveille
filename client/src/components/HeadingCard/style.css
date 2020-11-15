@@ -1,12 +1,12 @@
 .card-container {
     border-top: 2px solid #d5d8dc;
     margin-bottom: 10px;
-    width: 30%;
+    width: 32%;
     font-size: 13px;
     font-weight: bold;
     padding: 5px 0;
     height: fit-content;
-    margin-left: 6px;
+    display: inline;
 }
 
 .small-title,

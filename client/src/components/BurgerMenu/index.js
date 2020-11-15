@@ -31,7 +31,7 @@ export default function BurgerMenu(props) {
             position: 'fixed',
             height: '100%',
             width: 'calc(16vw + 94px)',
-            minWidth: '160px'
+            minWidth: '180px'
         },
         bmMenu: {
             background: '#373a47',

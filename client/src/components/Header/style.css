@@ -36,15 +36,11 @@ header {
     color: #FFFFFF;
 }
 
-#nav-right,
-#nav-right>li {
-    width: 130px!important;
-}
-
 #nav-right li {
     height: 33%;
     margin: 1px;
     background: #333;
+    padding: 0 6px;
 }
 
 #nav-right a {
@@ -60,9 +56,6 @@ header {
         margin-right: calc(4vw - 5px);
         height: 70%;
     }
-    /* .logo {
-        height: 65%;
-    } */
 }
 
 @media screen and (max-width: 540px) {
