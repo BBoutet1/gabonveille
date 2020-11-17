@@ -1,34 +1,15 @@
 import React from "react";
-import HeadingCard from "../../components/HeadingCard";
-import AdvertisingCard from "../../components/advertisingCard"
-import headingsArray from "../../utils/lastReports"
-import ads from "../../utils/advertising"
+import HeadingsList from "../../components/HeadingsList";
+import AdsList from "../../components/AdsList"
 import "./style.css"
 
-const smallHeadings = headingsArray.map(heading => {
-    return <HeadingCard
-    key = { heading.title }
-    title = { heading.title }
-    image = { heading.image }
-    /> 
-});
-
-const advertisings = ads.map(element => {
-    return <AdvertisingCard
-    image = { element.image }
-    />  
-});
 
 const Home = () => (
     
     <div className="page-body">
-        <aside className="small-headings-container headings-left">
-              {smallHeadings}
-        </aside>
+        <HeadingsList classes = "small-headings-container headings-left"/>
         <div className="headline-and-ads">
-         <aside className="advertising advertising-top">
-            {advertisings}
-        </aside>
+        <AdsList classes = "advertising advertising-top"/>
           <main className="big-headline">
             <h3 className="big-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
             <div> 
@@ -37,14 +18,9 @@ const Home = () => (
                 </div>       
                 <p className="big-summary">Velit dignissim sodales ut eu sem. A arcu cursus vitae congue. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Amet consectetur adipiscing elit ut aliquam purus sit amet. Augue lacus viverra vitae congue. </p>
             </div>
-            <aside className="small-headings-container headings-bottom">
-                {smallHeadings}
-            </aside>
+            <HeadingsList classes = "small-headings-container headings-bottom"/>
         </main>
-        <aside className="advertising advertising-right">
-            {advertisings}
-      </aside>
-     
+        <AdsList classes = "advertising advertising-right"/>
         </div>
     </div>
  

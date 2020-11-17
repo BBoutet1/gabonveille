@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css"
-export default function HeadingCard(props) {
+export default function AdCard(props) {
   return (
       <div className="ads-container">
-          <img className="ad-image" src={props.image} alt="" />      
+          <img className="ad-image" src={props.image} alt=""/>      
         </div>
   );
 }
