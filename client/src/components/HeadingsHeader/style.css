@@ -3,13 +3,15 @@
     .headings-header {
         display: flex;
         height: calc(5.6vw + 64px);
-        width: 100%;
+        width: 99.5%;
+        margin-left: 0.5%;
+        border-top: 3px solid #d5d8dc;
     }
     /* Advertisement  container */
     
     .bottom-ad {
         width: auto;
-        height: 95%;
+        height: 97%;
         margin: auto;
     }
     
@@ -23,6 +25,8 @@
         }
         .headings-ad-md {
             display: flex;
-            margin-top: 2%;
+            margin-top: 1%;
+            border-top: none;
+            border-bottom: 2px solid #d5d8dc;
         }
     }
