@@ -12,7 +12,7 @@ export default function BurgerMenu(props) {
             width: 'calc(0.8vw + 23px)',
             height: 'calc(0.8vw + 18px)',
             left: 'calc(4vw - 5px)',
-            top: '95px'
+            top: 'calc(5.6vw + 69px)'
         },
         bmBurgerBars: {
             background: '#373a47'

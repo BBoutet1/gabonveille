@@ -1,3 +1,14 @@
+/* Headers above and below the Navbar */
+
+header {
+    display: flex;
+    height: fit-content;
+    height: calc(5.6vw + 64px);
+    min-height: 90px;
+    background-color: white;
+}
+
+
 /* Logo image inside Header */
 
 .logo {
