@@ -1,7 +1,7 @@
     /* Logo image inside Header */
     
     .headings-header {
-        display: block;
+        display: flex;
         height: calc(5.6vw + 64px);
         width: 100%;
     }
@@ -22,7 +22,7 @@
             display: none;
         }
         .headings-ad-md {
-            display: block;
+            display: flex;
             margin-top: 2%;
         }
     }
