@@ -1,0 +1,28 @@
+    /* Logo image inside Header */
+    
+    .headings-header {
+        display: block;
+        height: calc(5.6vw + 64px);
+        width: 100%;
+    }
+    /* Advertisement  container */
+    
+    .bottom-ad {
+        width: auto;
+        height: 95%;
+        margin: auto;
+    }
+    
+    .headings-ad-md {
+        display: none;
+    }
+    
+    @media screen and (max-width: 1040px) {
+        .headings-ad-lg {
+            display: none;
+        }
+        .headings-ad-md {
+            display: block;
+            margin-top: 2%;
+        }
+    }

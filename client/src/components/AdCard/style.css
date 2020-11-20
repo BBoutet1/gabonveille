@@ -14,11 +14,3 @@
                     display: block;
                     margin: auto;
                 }
-                
-                @media screen and (max-width: 540px) {
-                    .ads-container {
-                        margin: 0px;
-                        margin-top: 10px;
-                        width: 49%;
-                    }
-                }

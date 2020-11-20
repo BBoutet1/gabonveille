@@ -1,13 +1,13 @@
 import React from "react";
 import Logo from "../assets/images/logo.png"
-import Publicite from "../assets/images/publicite.png"
+import TopAd from "../assets/images/publicite.png"
 import "./style.css"
 
-function Header(){
+export default function TopHeader(){
     return (
       <header className="header">
         <img className="logo" src={Logo} alt="logo"></img>
-        <img className="publicite" src={Publicite} alt="ads panel"></img>
+        <img className="top-ad" src={TopAd} alt="ads panel"></img>
             <ul id="nav-right">
               <li><a href="accueil">Accueil</a></li>
               <li><a href="nous-connaitre">Nous connaitre</a></li>
@@ -16,5 +16,3 @@ function Header(){
         </header>
     )
 }
-
-export default Header;

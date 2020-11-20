@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css"
-export default function HeadingCard(props) {
+export default function HeadingsHeader(props) {
   console.log(props.image)
   return (
           <div className="card-container">

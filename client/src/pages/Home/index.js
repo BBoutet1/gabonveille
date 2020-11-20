@@ -1,16 +1,18 @@
 import React from "react";
 import HeadingsList from "../../components/HeadingsList";
+import HeadingsHeader from "../../components/HeadingsHeader"
 import AdsList from "../../components/AdsList"
 import "./style.css"
-
 
 const Home = () => (
     
     <div className="page-body">
         <HeadingsList classes = "small-headings-container headings-left"/>
         <div className="headline-and-ads">
-        <AdsList classes = "advertising advertising-top"/>
-          <main className="big-headline">
+        <main className="big-headline">
+            <HeadingsHeader
+                displayClass = "headings-ad-md"
+            />
             <h3 className="big-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
             <div> 
                 <div>
@@ -20,7 +22,7 @@ const Home = () => (
             </div>
             <HeadingsList classes = "small-headings-container headings-bottom"/>
         </main>
-        <AdsList classes = "advertising advertising-right"/>
+        <AdsList classes = "advertising"/>
         </div>
     </div>
  

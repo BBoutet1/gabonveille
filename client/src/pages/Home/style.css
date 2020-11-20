@@ -45,9 +45,6 @@
 
 .advertising {
     margin-top: 20px;
-}
-
-.advertising {
     width: 35%;
     padding: 0 10px;
 }
@@ -112,9 +109,6 @@
         width: 100%;
         display: flex;
     }
-    .advertising-top {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 920px) {
@@ -127,9 +121,6 @@
     .big-title {
         font-size: 22px;
     }
-    .advertising-top {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -137,37 +128,37 @@
         font-size: 18px;
     }
     .big-headline {
-        width: 70%;
+        width: 65%;
     }
     .advertising {
-        width: 30%;
+        width: 35%;
         display: block;
-    }
-    .advertising-top {
-        display: none;
     }
 }
 
 @media screen and (max-width: 540px) {
-    .headline-and-ads {
-        width: 100%;
-        display: block;
-    }
     .big-title {
-        font-size: 16px;
-    }
-    .advertising-right {
-        display: none;
-    }
-    .advertising-top {
-        width: 100%;
-        display: flex;
-        margin: 0px;
-        padding: 0%;
-        justify-content: space-between;
+        font-size: 15px;
     }
     .big-headline {
-        width: 100%;
-        margin-top: 10px;
+        width: 60%;
+    }
+    .advertising {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .big-title {
+        font-size: 14px;
+    }
+    .big-headline {
+        width: 60%;
+    }
+    .advertising {
+        width: 40%;
+    }
+    p {
+        font-size: 11px;
     }
 }

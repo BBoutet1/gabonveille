@@ -1,14 +1,14 @@
-import React from "react"
-import Header from '../../components/Header'
+import React from 'react'
+import TopHeader from '../../components/TopHeader'
 import Navbar from '../../components/Navbar'
-import "./style.css";
+import './style.css';
 
 export default function PagesHeader() {
 
     return (
-        <div className="pages-header">
-            <Header/>
-            <Navbar/>
+        <div className='pages-header'>
+            <TopHeader/>
+            <Navbar />
         </div>
     )
    
