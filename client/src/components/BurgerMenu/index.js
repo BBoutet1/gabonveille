@@ -4,7 +4,6 @@ import { slide as Menu } from 'react-burger-menu';
 // BurgerMenu and Navbar components share same css file below
 import "../Navbar/style.css"
 
-
 export default function BurgerMenu(props) {
     var styles = {
         bmBurgerButton: {
@@ -12,7 +11,7 @@ export default function BurgerMenu(props) {
             width: 'calc(0.8vw + 23px)',
             height: 'calc(0.8vw + 18px)',
             left: 'calc(4vw - 5px)',
-            top: '-26.8px'
+            top: '5px'
         },
         bmBurgerBars: {
             background: '#373a47'
@@ -47,10 +46,9 @@ export default function BurgerMenu(props) {
             outline: 'none'
         },
         bmOverlay: {
-            background: 'rgba(0, 0, 0, 0.3)'
+            background: 'rgba(0, 0, 0, 0.3)',
         }
     }
-
   return (
     <Menu styles={styles}>
       {props.children}

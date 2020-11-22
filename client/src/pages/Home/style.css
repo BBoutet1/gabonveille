@@ -5,6 +5,7 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
 
@@ -20,10 +21,9 @@
 /* Small headings wrapper*/
 
 .small-headings-container {
-    width: 35%;
+    width: 34%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
     padding-right: 1%;
     justify-content: space-between;
 }
@@ -35,8 +35,6 @@
     width: 65%;
     max-width: 700px;
     border-top: 3px solid #d5d8dc;
-    margin-top: 20px;
-    float: left;
 }
 
 
@@ -44,16 +42,9 @@
  advertising: is the wrappers for ads  */
 
 .advertising {
-    margin-top: 20px;
-    width: 35%;
-    padding: 0 10px;
-}
-
-
-/* advertisings on the top of the main headline */
-
-.advertising-top {
-    display: none;
+    width: 33%;
+    border-top: 3px solid #d5d8dc;
+    margin-left: 2%;
 }
 
 
@@ -130,10 +121,6 @@
     .big-headline {
         width: 65%;
     }
-    .advertising {
-        width: 35%;
-        display: block;
-    }
 }
 
 @media screen and (max-width: 540px) {
@@ -144,7 +131,7 @@
         width: 60%;
     }
     .advertising {
-        width: 40%;
+        width: 38%;
     }
 }
 
@@ -154,9 +141,6 @@
     }
     .big-headline {
         width: 60%;
-    }
-    .advertising {
-        width: 40%;
     }
     p {
         font-size: 11px;

@@ -55,11 +55,16 @@ import "./style.css"
     ))
   }
 
-function NavTabs(props) {
+function NavTabs() {
   return (
     <div>
       <nav className="navbar">
-          <ul id="nav-mobile">
+        <div className="sidebar" >
+            <BurgerMenu>
+                {renderList()}
+            </BurgerMenu>
+        </div>
+        <ul id="nav-mobile">
           {renderList()}
               <SearchBox />
               <ul  id="subnav">
@@ -75,11 +80,6 @@ function NavTabs(props) {
               </ul>
           </ul>
       </nav>
-      <div className="sidebar">
-          <BurgerMenu>
-              {renderList()}
-          </BurgerMenu>
-      </div>
     </div>
  
   );

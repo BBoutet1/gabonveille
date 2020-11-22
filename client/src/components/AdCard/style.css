@@ -1,9 +1,7 @@
-                .ads-container {
-                    border-top: 2px solid #d5d8dc;
+                .ad-container {
                     width: 100%;
                     font-size: 14px;
                     font-weight: bold;
-                    margin: 0 5px 20px;
                     height: fit-content;
                     display: flex;
                 }

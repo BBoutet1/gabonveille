@@ -7,7 +7,13 @@ import "./style.css"
 const Home = () => (
     
     <div className="page-body">
-        <HeadingsList classes = "small-headings-container headings-left"/>
+        <HeadingsHeader
+            displayClass = "headings-ad-sm"
+        />
+        <HeadingsList
+            classes="small-headings-container headings-left"
+            headerClass ="headings-ad-lg"
+        />
         <div className="headline-and-ads">
         <main className="big-headline">
             <HeadingsHeader
@@ -20,7 +26,9 @@ const Home = () => (
                 </div>       
                 <p className="big-summary">Velit dignissim sodales ut eu sem. A arcu cursus vitae congue. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Amet consectetur adipiscing elit ut aliquam purus sit amet. Augue lacus viverra vitae congue. </p>
             </div>
-            <HeadingsList classes = "small-headings-container headings-bottom"/>
+            <HeadingsList classes = "small-headings-container headings-bottom"
+                    headerClass ="headings-ad-lg"
+            />
         </main>
         <AdsList classes = "advertising"/>
         </div>

@@ -1,21 +1,22 @@
-    /* Logo image inside Header */
+    /* Home small headings header */
     
     .headings-header {
         display: flex;
         height: calc(5.6vw + 64px);
-        width: 99.5%;
-        margin-left: 0.5%;
+        width: 100%;
         border-top: 3px solid #d5d8dc;
     }
-    /* Advertisement  container */
+    /* Advertisements  container at the bottom*/
     
-    .bottom-ad {
+    .headings-ad {
         width: auto;
-        height: 97%;
+        height: 90%;
+        max-width: 100%;
         margin: auto;
     }
     
-    .headings-ad-md {
+    .headings-ad-md,
+    .headings-ad-sm {
         display: none;
     }
     
@@ -25,8 +26,16 @@
         }
         .headings-ad-md {
             display: flex;
-            margin-top: 1%;
             border-top: none;
             border-bottom: 2px solid #d5d8dc;
+        }
+    }
+    
+    @media screen and (max-width: 540px) {
+        .headings-ad-md {
+            display: none;
+        }
+        .headings-ad-sm {
+            display: flex;
         }
     }

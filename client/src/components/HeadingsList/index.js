@@ -14,7 +14,7 @@ export default function HeadingsList(props) {
     return (
         <div className={props.classes}>
             <HeadingsHeader
-                displayClass = "headings-ad-lg"
+                displayClass = {props.headerClass}
             />
             {headingsList}
       </div>
