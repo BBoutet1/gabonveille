@@ -4,7 +4,6 @@ import Navbar from '../../components/Navbar'
 import './style.css';
 
 export default function PagesHeader() {
-
     return (
         <div className='pages-header'>
             <TopHeader/>

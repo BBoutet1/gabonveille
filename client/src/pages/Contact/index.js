@@ -48,7 +48,7 @@ class Contact extends React.Component {
       <section className="hTwo">
         <h5> <strong>A l écoute de vos besoins...</strong></h5>
       </section>
-      <section className="aboutMe">
+      <section>
         <form id="contact-form" onSubmit={this.handleSubmit} method="post">
           <div className="form-group">
             <input type="text" name="name" className="form-control" value={this.state.name} placeholder="Nom" onChange={this.handleChange} />
