@@ -1,4 +1,6 @@
 import React from "react";
+import { Editor } from "react-draft-wysiwyg";
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 
 class ParagraphForm extends React.Component {
  
@@ -6,9 +8,13 @@ class ParagraphForm extends React.Component {
     console.log(this.state)
     return (
           <form id="ParagraphForm-form" onSubmit={this.handleSubmit} method="post">
-            <div className="form-group">
-              <textarea name="message" className="form-control" placeholder="Paragraphe ici..." rows="5"></textarea>
-            </div>
+            <Editor
+              // editorState={editorState}
+              // toolbarClassName="toolbarClassName"
+              // wrapperClassName="wrapperClassName"
+              // editorClassName="editorClassName"
+              // onEditorStateChange={this.onEditorStateChange}
+            />
             <div>
               <button type="submit" className="btn">Envoyer</button>
             </div>
