@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Us from "./pages/Nous"
 import PagesHader from "./pages/PagesHeader"
-import NewArticleForm from "./pages/NewArticleForm"
+import CreateNewArticle from "./pages/CreateNewArticle"
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
               <Us/>
             </Route>
             <Route exact path={["/nouvel-article"]}>
-              <NewArticleForm/>
+              <CreateNewArticle/>
             </Route>
             <Route exact path={["/*"]}>
               <Home/>

@@ -1,8 +1,7 @@
 import React from "react";
 import axios from "axios";
-import "./style.css";
 
-class Contact extends React.Component {
+class CreateNewArticle extends React.Component {
 	state = {
   	name: '',
     email: '',
@@ -77,4 +76,4 @@ class Contact extends React.Component {
 
 
 
-export default Contact;
+export default CreateNewArticle;

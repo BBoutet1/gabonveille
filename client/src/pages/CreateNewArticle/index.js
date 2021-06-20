@@ -1,11 +1,11 @@
 import React from "react";
 import NewParagraphForm from "../../components/ParagraphForm";
-import InputForm from "../../components/InputForm";
+import ArticleTitleForm from "../../components/ArticleTitleForm";
 const NewArticleForm = () => (
     
-  <div>
+  <div className="container">
     <h5><strong>Ajouter un artile...</strong></h5>
-    <InputForm/>
+    <ArticleTitleForm/>
     <NewParagraphForm/>
   </div>
  
