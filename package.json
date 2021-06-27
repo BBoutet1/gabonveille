@@ -32,17 +32,18 @@
         "politique"
     ],
     "dependencies": {
-        "axios": "^0.20.0",
+        "axios": "^0.21.1",
         "bunyan": "^1.8.14",
         "cors": "^2.8.5",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
         "if-env": "^1.0.4",
-        "nodemailer": "^6.4.11",
+        "nodemailer": "^6.6.2",
         "path": "^0.12.7",
         "react": "^16.13.1",
         "react-burger-menu": "^2.9.0",
         "react-dom": "^16.13.1",
+        "react-draft-wysiwyg": "^1.14.7",
         "react-router-dom": "^5.2.0"
     },
     "devDependencies": {
