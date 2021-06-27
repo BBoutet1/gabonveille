@@ -5,7 +5,7 @@ import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 class ParagraphForm extends React.Component {
  
   render() {
-    console.log(this.state)
+    console.log("page editor opened")
     return (
           <form id="ParagraphForm-form" onSubmit={this.handleSubmit} method="post">
             <Editor
