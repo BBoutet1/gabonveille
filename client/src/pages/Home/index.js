@@ -20,12 +20,12 @@ const Home = () => (
             <HeadingsHeader
                 displayClass = "headings-ad-md"
             />
-            <h3 className="big-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-            <div> 
-                <div>
-                    <img className="big-image" src={Image} alt="" />
-                </div>       
-                <p className="big-summary">Velit dignissim sodales ut eu sem. A arcu cursus vitae congue. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Amet consectetur adipiscing elit ut aliquam purus sit amet. Augue lacus viverra vitae congue. </p>
+            <div className="big-headline-container">
+                <img className="big-image" src={Image} alt="" /> 
+                <div className="big-headline-text">
+                    <h3 className="big-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>     
+                    <p className="big-summary">Velit dignissim sodales ut eu sem. A arcu cursus vitae congue. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Amet consectetur adipiscing elit ut aliquam purus sit amet. Augue lacus viverra vitae congue. </p>
+                </div>
             </div>
             <HeadingsList classes = "small-headings-container headings-bottom"
                     headerClass ="headings-ad-lg"

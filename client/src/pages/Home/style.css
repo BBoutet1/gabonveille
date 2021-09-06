@@ -1,7 +1,7 @@
 /* Page body wrapper, below the navbar */
 
 .page-body {
-    width: 90vw;
+    width: 84vw;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -12,16 +12,22 @@
 /* Home: Big headline (in center) and advertisings wrapper */
 
 .headline-and-ads {
-    width: 65%;
+    width: 70%;
     display: flex;
     float: right;
 }
 
+.big-headline-container{
+    position: relative;
+    padding-top: 75%;
+    color:white;
+    overflow: hidden;
+}
 
 /* Small headings wrapper*/
 
 .small-headings-container {
-    width: 34%;
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
     padding-right: 1%;
@@ -33,11 +39,18 @@
 /* Main hedline container inside the home page */
 
 .big-headline {
-    width: 65%;
+    width: 70%;
     max-width: 700px;
     border-top: 3px solid #d5d8dc;
 }
 
+.big-headline-text{
+    position:absolute;
+    bottom:0;
+    z-index:10;
+    padding: 1.5%;
+     background:rgba(0,0,0,0.2);
+}
 
 /* small-headings-right: this wrapper to places the small headings on the right in homepage
  advertising: is the wrappers for ads  */
@@ -62,16 +75,16 @@
     margin: 10px 0;
     padding: 0;
     width: 100%;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 800;
-    line-height: 1.2;
-    text-align: justify;
 }
 
 
 /* Main headline image in homepage */
 
 .big-image {
+    position:absolute;
+    top:0;
     width: 100%;
     margin: 10px auto;
     display: block;
